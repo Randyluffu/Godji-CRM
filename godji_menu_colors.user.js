@@ -51,6 +51,6 @@
         }
     }
 
-    setInterval(colorize, 100);
+    setInterval(colorize, 010);
 
 })();
