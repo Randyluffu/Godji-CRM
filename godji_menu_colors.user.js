@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Godji CRM - Цветные кнопки
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.0
 // @description  
 // @match        https://godji.cloud/*
 // @match        https://*.godji.cloud/*
@@ -24,7 +24,7 @@
         'Завершить сессию':     { color: '#c62828', bg: '#ffebee' },
         'Выйти из аккаунта':    { color: '#a05a2c', bg: '#fbe9e7' },
         'Выключить':            { color: '#ffffff', bg: '#7f0000' },
-        'Включить':             { color: '#ffffff', bg: '#1b5e20' },
+        'Включить':             { color: '#ffffff', bg: '#eb4b83' },
         'Перезагрузить':        { color: '#e65100', bg: '#fff3e0' },
         'Снять защиту':         { color: '#ffffff', bg: '#283593' },
         'Командная строка':     { color: '#1a237e', bg: '#e8eaf6' },
