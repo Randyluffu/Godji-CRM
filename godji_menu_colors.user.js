@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Godji CRM - Цветные кнопки
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  
 // @match        https://godji.cloud/*
 // @match        https://*.godji.cloud/*
