@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Godji CRM - Minuty v chasy
+// @name         Godji CRM - Конвертер времени
 // @namespace    http://tampermonkey.net/
-// @version      1.4
-// @description  Конвертирует минуты в часы на Godji CRM
+// @version      1.0
+// @description  
 // @match        https://godji.cloud/*
 // @match        https://*.godji.cloud/*
 // @updateURL    https://raw.githubusercontent.com/Randyluffu/Godji-CRM/main/godji_minutes_to_hours.user.js
