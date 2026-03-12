@@ -5,6 +5,8 @@
 // @description  Раскрашивает пункты контекстного меню на Godji CRM
 // @match        https://godji.cloud/*
 // @match        https://*.godji.cloud/*
+// @updateURL    https://raw.githubusercontent.com/ТВО_ИМЯ/РЕПО/main/godji_colors.user.js
+// @downloadURL  https://raw.githubusercontent.com/ТВО_ИМЯ/РЕПО/main/godji_colors.user.js
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==
