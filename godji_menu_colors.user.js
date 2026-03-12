@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Godji CRM - Menu Colors
+// @name         Godji CRM - Цветные кнопки
 // @namespace    http://tampermonkey.net/
 // @version      1.1
-// @description  Раскрашивает пункты контекстного меню на Godji CRM
+// @description  
 // @match        https://godji.cloud/*
 // @match        https://*.godji.cloud/*
 // @updateURL    https://raw.githubusercontent.com/Randyluffu/Godji-CRM/main/godji_menu_colors.user.js
@@ -51,6 +51,6 @@
         }
     }
 
-    setInterval(colorize, 300);
+    setInterval(colorize, 100);
 
 })();
