@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Godji CRM - Menu Colors
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Раскрашивает пункты контекстного меню на Godji CRM
 // @match        https://godji.cloud/*
 // @match        https://*.godji.cloud/*
-// @updateURL    https://raw.githubusercontent.com/ТВО_ИМЯ/РЕПО/main/godji_colors.user.js
-// @downloadURL  https://raw.githubusercontent.com/ТВО_ИМЯ/РЕПО/main/godji_colors.user.js
+// @updateURL    https://raw.githubusercontent.com/Randyluffu/Godji-CRM/main/godji_menu_colors.user.js
+// @downloadURL  https://raw.githubusercontent.com/Randyluffu/Godji-CRM/main/godji_menu_colors.user.js
 // @grant        none
 // @run-at       document-idle
 // ==/UserScript==
@@ -46,7 +46,6 @@
             btn.style.backgroundColor = cfg.bg;
             btn.style.setProperty('--menu-item-color', cfg.color);
             btn.style.setProperty('--menu-item-hover', cfg.bg);
-            // Красим иконку
             var svg = btn.querySelector('svg');
             if (svg) svg.style.stroke = cfg.color;
         }
