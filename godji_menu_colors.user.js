@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Godji CRM - Цветные кнопки
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  
 // @match        https://godji.cloud/*
 // @match        https://*.godji.cloud/*
@@ -15,7 +15,7 @@
     'use strict';
 
     var COLORS = {
-        'Посадить за ПК':       { color: '#2e7d32', bg: '#e8f5e9' },
+        'Посадить за ПК':       { color: '#2e7d32', bg: '#1b5e20' },
         'Бронирование':         { color: '#f57f17', bg: '#fffde7' },
         'Пополнить наличными':  { color: '#2e7d32', bg: '#e8f5e9' },
         'Пополнить бонусами':   { color: '#2e7d32', bg: '#e8f5e9' },
