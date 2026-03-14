@@ -68,7 +68,7 @@
         var wrap = document.createElement('div');
         wrap.style.cssText = [
             'position:fixed',
-            'bottom:20px',
+            'bottom:120px',
             'left:12px',
             'z-index:99999',
             'display:flex',
