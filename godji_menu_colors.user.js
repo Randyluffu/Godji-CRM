@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Godji CRM - Цвета кнопок
+// @name         Godji CRM - Menu Colors
 // @namespace    http://tampermonkey.net/
-// @version      1.5
-// @description  
+// @version      1.6
+// @description  Раскрашивает пункты контекстного меню на Godji CRM
 // @match        https://godji.cloud/*
 // @match        https://*.godji.cloud/*
 // @updateURL    https://raw.githubusercontent.com/Randyluffu/Godji-CRM/main/godji_menu_colors.user.js
@@ -68,21 +68,23 @@
         var wrap = document.createElement('div');
         wrap.style.cssText = [
             'position:fixed',
-            'bottom:120px',
-            'left:12px',
-            'z-index:99999',
+            'bottom:260px',
+            'left:18px',
+            // Низкий z-index — ниже модальных окон сайта (обычно 200-400)
+            'z-index:150',
             'display:flex',
             'align-items:center',
             'gap:8px',
-            'background:#ffffff',
-            'border:1px solid #e8e8e8',
+            // Стиль под тёмный сайдбар
+            'background:rgba(255,255,255,0.08)',
+            'border:1px solid rgba(255,255,255,0.15)',
             'border-radius:8px',
             'padding:6px 12px 6px 10px',
-            'box-shadow:0 2px 8px rgba(0,0,0,0.10)',
+            'box-shadow:0 2px 8px rgba(0,0,0,0.30)',
             'cursor:pointer',
             'user-select:none',
             'font-family:inherit',
-            'transition:box-shadow 0.2s,border-color 0.2s',
+            'transition:box-shadow 0.2s,border-color 0.2s,background 0.2s',
         ].join(';');
 
         var icon = document.createElement('span');
@@ -94,7 +96,7 @@
         label.style.cssText = [
             'font-size:12px',
             'font-weight:600',
-            'color:#333',
+            'color:rgba(255,255,255,0.85)',
             'letter-spacing:0.2px',
             'white-space:nowrap',
         ].join(';');
@@ -126,7 +128,7 @@
                 track.style.background = '#cc0001';
                 thumb.style.left = '19px';
             } else {
-                track.style.background = '#d0d0d0';
+                track.style.background = 'rgba(255,255,255,0.25)';
                 thumb.style.left = '3px';
             }
         }
@@ -140,12 +142,12 @@
         updateVisual();
 
         wrap.addEventListener('mouseenter', function () {
-            wrap.style.boxShadow = '0 4px 16px rgba(204,0,1,0.15)';
-            wrap.style.borderColor = '#cc0001';
+            wrap.style.background = 'rgba(255,255,255,0.14)';
+            wrap.style.borderColor = 'rgba(255,255,255,0.35)';
         });
         wrap.addEventListener('mouseleave', function () {
-            wrap.style.boxShadow = '0 2px 8px rgba(0,0,0,0.10)';
-            wrap.style.borderColor = '#e8e8e8';
+            wrap.style.background = 'rgba(255,255,255,0.08)';
+            wrap.style.borderColor = 'rgba(255,255,255,0.15)';
         });
 
         wrap.addEventListener('click', function () {
